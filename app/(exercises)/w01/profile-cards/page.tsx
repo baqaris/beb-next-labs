@@ -2,13 +2,19 @@
 
 import styles from "./profileCard.module.css";
 
-type Person = { name: string; role: string; img: string; };
+type Person = {
+    name: string;
+    role: string;
+    img: string;
+};
 
 const people: Person[] = [
 
     { name: "Ana", role: "FrontEnd", img: "https://picsum.photos/seed/ana/400/300" },
     { name: "Gio", role: "UI Desinger", img: "https://picsum.photos/seed/gio/400/300" },
     { name: "Nika", role: "Full-Stack", img: "https://picsum.photos/seed/nika/400/300" },
+    { name: "Salome", role: "Back-End", img:"https://picsum.photos/seed/salome/400/300" },
+    {name: "Gocha", role: "driver", img: "https://picsum.photos/seed/salome/400/300"}
 
 ]
 
@@ -30,6 +36,7 @@ export default function Page() {
                         </article>
                     ))}
                 </section>
+               
             </main>
 
         </div>
