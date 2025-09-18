@@ -36,8 +36,8 @@
 **Assignments** (📁 `app/(exercises)/w01/profile-cards`)
 
 * [x] **A1:** `type Person` + `people: Person[]` ✅
-* [ ] **A2:** `ProfileCard` component (+ hover scale)
-* [ ] **A3:** `ProfileCards` page (map + grid + correct `key`)
+* [x] **A2:** `ProfileCard` component (+ hover scale)
+* [x] **A3:** `ProfileCards` page (map + grid + correct `key`)
 
 **Review criteria:** strict typing, clean JSX, hover/focus behavior, no console errors.
 
