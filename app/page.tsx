@@ -1,7 +1,9 @@
 
 "use client";
+import Productlist from "./(exercises)/ProductList/ProductsList";
 import Counter from "./(exercises)/w01/useState/Counter";
 import NameForm from "./(exercises)/w01/useState/NameForm";
+import FormName from "./(exercises)/w01/useState/traningPage";
 import styles from "./page.module.css";
 import Button from "./src/components/Button/Button";
 import ProductCard from "./src/components/ProductCard/ProductCard";
@@ -21,6 +23,10 @@ export default function Home() {
           <Counter/>
         </div>
         <NameForm/>
+        <div>
+          <h1>პროდუქტის გამოტანა</h1>
+          <Productlist/>
+        </div>
 
       </main>
       <footer className={styles.footer}>
@@ -36,6 +42,7 @@ export default function Home() {
        
         <Button fullWidth variant="primary">Full width</Button>
       </footer>
+      <FormName/>
     </div>
   );
 }
