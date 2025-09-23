@@ -1,5 +1,7 @@
 
 "use client";
+
+import GptCardProductList from "./(exercises)/ProductList/TaskCardProductList";
 import Productlist from "./(exercises)/ProductList/ProductsList";
 import Counter from "./(exercises)/w01/useState/Counter";
 import NameForm from "./(exercises)/w01/useState/NameForm";
@@ -8,6 +10,8 @@ import styles from "./page.module.css";
 import Button from "./src/components/Button/Button";
 import ProductCard from "./src/components/ProductCard/ProductCard";
 import { products } from "./src/types/basic";
+import TaskProductCard from "./(exercises)/w01/GptCard/TaskProductCard";
+import TaskCardProductList from "./(exercises)/ProductList/TaskCardProductList";
 
 
 
@@ -26,6 +30,11 @@ export default function Home() {
         <div>
           <h1>პროდუქტის გამოტანა</h1>
           <Productlist/>
+        </div>
+
+        <div>
+          <h3>Figma task:</h3>
+         <TaskCardProductList/>
         </div>
 
       </main>
