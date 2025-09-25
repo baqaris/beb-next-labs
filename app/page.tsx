@@ -12,7 +12,8 @@ import ProductCard from "./src/components/ProductCard/ProductCard";
 import { products } from "./src/types/basic";
 import TaskProductCard from "./(exercises)/w01/GptCard/TaskProductCard";
 import TaskCardProductList from "./(exercises)/ProductList/TaskCardProductList";
-
+import Input from "./(exercises)/w02/controls/Input";
+import ProductCardlist2025_09_25 from "./(exercises)/ProductList/ProductCardList-25-09-2025";
 
 
 export default function Home() {
@@ -36,6 +37,12 @@ export default function Home() {
           <h3>Figma task:</h3>
          <TaskCardProductList/>
         </div>
+        <Input
+        label="სახელი"
+        required
+        hleperText="სახელის შეყვანა აუცილებელია"
+        erorr="სახელი არასწორია"
+        />
 
       </main>
       <footer className={styles.footer}>
@@ -52,6 +59,7 @@ export default function Home() {
         <Button fullWidth variant="primary">Full width</Button>
       </footer>
       <FormName/>
+      <ProductCardlist2025_09_25 />
     </div>
   );
 }

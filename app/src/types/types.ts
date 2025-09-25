@@ -10,5 +10,7 @@ export type Product= {
     rating?:number;
     isNew?:boolean;
     soldOut?:boolean;
+    description?:string;
+    
    
 };
