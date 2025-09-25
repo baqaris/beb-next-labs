@@ -57,6 +57,7 @@ export default function TaskProductCard({ item, onAdd, highlight = false }: task
                     {soldOut ? " not avalable" : "Add to cart"}
                 </button>
             </div>
+          
         </div>
     );
 }
