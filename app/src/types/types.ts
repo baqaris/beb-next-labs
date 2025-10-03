@@ -1,16 +1,18 @@
 // app\src\types\types.ts
 
 
-export type Product= {
+export type Product ={
     id:string;
+    description?: string;
+    image?: string;
+    price: number;
+    oldPrice?: number;
+    soldOut?: boolean;
+    rating?: number;
+    isNew?: boolean;
     title:string;
-    price:number;
-    image:string;
-    oldPrice?:number;
-    rating?:number;
-    isNew?:boolean;
-    soldOut?:boolean;
-    description?:string;
     
-   
-};
+}
+
+
+export type Counts = Partial<Record<Product["id"], number>>;
