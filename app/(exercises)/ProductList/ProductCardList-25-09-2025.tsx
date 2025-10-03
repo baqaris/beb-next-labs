@@ -4,7 +4,7 @@ import type { Product } from "@/app/src/types/types";
 import NewProductCard from "../w01/ProductCard25-09-2025/ProductCard25-09-2025";
 
 const data: Product [] = [
-    {id:"1", title:"Jolt 4 - all White Runnner", image: "/SportShose.png", price:79.99, oldPrice: 99.99, description:"Lightweight mesh, cusioned midsole, everydau runs.",isNew:true,  rating:8.8, soldOut:false}
+    {id:"1", title:"Jolt 4 - all White Runnner", image: "/SportShose.png", price:79.99, oldPrice:200, description:"Lightweight mesh, cusioned midsole, everydau runs.",isNew:true,  rating:8.8, soldOut:false}
 ];
 
 
