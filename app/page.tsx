@@ -1,7 +1,6 @@
 
 "use client";
 
-import GptCardProductList from "./(exercises)/ProductList/TaskCardProductList";
 import Productlist from "./(exercises)/ProductList/ProductsList";
 import Counter from "./(exercises)/w01/useState/Counter";
 import NameForm from "./(exercises)/w01/useState/NameForm";
@@ -10,16 +9,17 @@ import styles from "./page.module.css";
 import Button from "./src/components/Button/Button";
 import ProductCard from "./src/components/ProductCard/ProductCard";
 import { products } from "./src/types/basic";
-import TaskProductCard from "./(exercises)/w01/GptCard/TaskProductCard";
 import TaskCardProductList from "./(exercises)/ProductList/TaskCardProductList";
 import Input from "./(exercises)/w02/controls/Input";
 import ProductCardlist2025_09_25 from "./(exercises)/ProductList/ProductCardList-25-09-2025";
+import ProductMini from "./(exercises)/w03/ProductMini";
 
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <ProductMini/>
 
         {products.map((p) => (
           <ProductCard key={p.id} item={p} />
